@@ -131,7 +131,7 @@ ob_end_clean();
 								<i class="aficon-eye"></i>
 								<?php echo adifier_get_advert_views(); ?>
 								&nbsp;&nbsp;#<?php the_ID() ?>
-								&nbsp;&nbsp;<i class="aficon-calendar-alt"></i> <?php echo 'xx' . date_i18n( get_option( 'date_format' ), get_the_time('U') ) ?>
+								&nbsp;&nbsp;<i class="aficon-calendar-alt"></i> <?php echo date_i18n( get_option( 'date_format' ), get_the_time('U') ) ?>
 							</li>
 						</ul>
 					</div>

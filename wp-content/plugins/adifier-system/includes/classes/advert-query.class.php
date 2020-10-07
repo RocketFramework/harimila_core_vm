@@ -843,13 +843,12 @@ function adifier_get_advert_phone( $post = 0 ){
 	$enable_phone_verification = adifier_get_option( 'enable_phone_verification' );
 	$post_id = empty( $post->ID ) ? get_the_ID() : $post->ID;
 	$phone = get_post_meta( $post_id, 'advert_phone', true );
-	$author_id = empty( $post->author ) ? get_the_author_meta('ID') : $post->author; // TODO = +
-
+	$author_id = empty( $post->author ) ? get_the_author_meta('ID') : $post->author;
+	
 	if( empty( $phone ) ){
-		//$author_id = empty( $post->author ) ? get_the_author_meta('ID') : $post->author; // TODO = -
-		$phone = get_user_meta( $author_id, 'phone', true );	
+		$phone = get_user_meta( $author_id, 'phone', true );		
 	}
-
+	
 	if( $enable_phone_verification == 'yes' && get_user_meta( $author_id, 'af_phone_verified', true ) != '1' ){	
 		$phone = '';
 	}
@@ -1020,18 +1019,6 @@ function adifier_get_advert_map_data( $post = 0 ){
 		'id'			=> $post->ID
 	);
 }
-}
-
-
-if ( !function_exists( 'get_ad_publish_date') ) {
-	function get_ad_publish_date() {
-		$date = date_i18n( get_option( 'date_format' ), get_the_time('U'));
-		$now = time();
-		$datediff = $now - strtotime( $date ;
-		$aging = round($datediff / (60 * 60 * 24));
-		
-		return $aging;
-	}
 }
 
 /*

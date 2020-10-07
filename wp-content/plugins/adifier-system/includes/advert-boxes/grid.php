@@ -7,9 +7,7 @@
 	</a>
 
 	<div class="white-block-content">
-		<?php 
-		date_i18n( get_option( 'date_format' ), get_the_time('U'));
-		?>
+
 		<?php include( get_theme_file_path( 'includes/advert-boxes/top-meta.php' ) ) ?>
 
 		<?php include( get_theme_file_path( 'includes/advert-boxes/title.php' ) ) ?>

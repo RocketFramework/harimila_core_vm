@@ -1,0 +1,4 @@
+git add .;
+git status;
+git commit -m "This is my first commit!";
+git push -u origin master;
