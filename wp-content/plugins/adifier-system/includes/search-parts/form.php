@@ -6,6 +6,7 @@
 	</div>
 </div>
 <form method="post" class="search-form" action="<?php echo adifier_get_search_link(); ?>">
+
 	<div class="white-block no-margin">
 		<div class="white-block-title">
 			<h5><?php esc_html_e( 'Filter Ads', 'adifier' ) ?></h5>
@@ -17,7 +18,9 @@
 				<label for="keyword"><?php esc_html_e( 'Keyword', 'adifier' ) ?></label>
 				<input type="text" class="keyword" name="keyword" id="keyword" value="<?php echo esc_attr( $keyword ) ?>" placeholder="<?php esc_html_e( 'Search for...', 'adifier' ) ?>">
 			</div>
-
+			<div class="submit-search-form" style="padding-bottom: 20px;">
+				<a href="javascript:void(0);" class="af-button filter-adverts"><?php esc_html_e( 'Apply Filters', 'adifier' ) ?></a>
+			</div>
 			<div class="form-group">
 				<?php adifier_taxonomy_filter( esc_html__( 'Category', 'adifier' ), 'category', 'advert-category', $category ); ?>
 			</div>

@@ -203,7 +203,7 @@ class Adifier_Custom_Fields_Advert{
 					$terms = adifier_get_taxonomy_hierarchy( $field->cf_slug );
 					$selected_term_ids = wp_list_pluck( $selected_terms, 'term_id' );
 					?>
-					<label for="<?php echo esc_attr( $field->cf_slug ) ?>" class="label-bottom-margin"><?php echo esc_html( $field->cf_label ).self::is_mandatory( $field ) ?></label>
+					<label for="<?php echo esc_attr( $field->cf_slug ) ?>" class="label-bottom-margin"><?php echo esc_html( $field->cf_label ).self::is_mandatory( $field ) . 'rete' ?></label>
 					<ul class="list-unstyled list-inline color-search">
 						<?php if( $field->cf_is_mandatory != 1 ): ?>
 							<li class="colored-default">

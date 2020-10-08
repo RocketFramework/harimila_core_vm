@@ -7,7 +7,7 @@
 	</a>
 
 	<div class="white-block-content">
-
+		
 		<?php include( get_theme_file_path( 'includes/advert-boxes/top-meta.php' ) ) ?>
 
 		<?php include( get_theme_file_path( 'includes/advert-boxes/title.php' ) ) ?>
