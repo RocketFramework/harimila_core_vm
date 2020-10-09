@@ -15,6 +15,6 @@
 		<?php include( get_theme_file_path( 'includes/advert-boxes/bottom-meta.php' ) ) ?>
 
 	</div>
-
+	<p/>
 	<?php adifier_get_map_lat_long(); ?>
 </div>
