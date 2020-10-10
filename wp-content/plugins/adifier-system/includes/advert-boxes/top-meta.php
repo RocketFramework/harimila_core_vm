@@ -7,7 +7,16 @@
 			<i class="aficon-dot-circle-o"></i>
 			<?php echo $ad_category; ?>			
 		<?php endif; ?>
-	</div>			
+	</div>	
+	<div class="advert-cat text-overflow">
+		<?php 
+		$ad_views = adifier_get_advert_views();
+		if( !empty( $ad_views ) ):
+			?>
+			<i class="aficon-eye"></i>
+			<?php echo $ad_views; ?>			
+		<?php endif; ?>
+	</div>		
 	<div class="advert-city text-overflow">
 		<?php
 		$location = adifier_get_advert_location();
