@@ -1,6 +1,6 @@
 <div class="bottom-advert-meta flex-wrap">
 	<?php echo adifier_get_advert_price() ?>
-	<div class="price-bids">
+	<div class="published-time">
 		<?php 
 		$date = get_ad_publish_date();
 
