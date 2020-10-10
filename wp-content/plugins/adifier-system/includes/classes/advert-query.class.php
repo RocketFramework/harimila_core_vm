@@ -1021,6 +1021,17 @@ function adifier_get_advert_map_data( $post = 0 ){
 }
 }
 
+if ( !function_exists( 'get_ad_publish_date') ) {
+	function get_ad_publish_date() {
+		$date = date_i18n( get_option( 'date_format' ), get_the_time('U'));
+		$now = time();
+		$datediff = $now - strtotime( $date ) ;
+		$aging = round($datediff / (60 * 60 * 24));
+		
+		return $aging;
+	}
+}
+
 /*
 * Post data for map search
 */
