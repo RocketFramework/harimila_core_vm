@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'bitnami_wordpress' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'bn_wordpress' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '96s633896S6338!' );
+define( 'DB_PASSWORD', '43fd0a9768' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -77,7 +77,11 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
+<<<<<<< HEAD
+define( 'WP_DEBUG', 'true' );
+=======
 define( 'WP_DEBUG', true );
+>>>>>>> d3c43325fdf972d3a891732174d1d526416dacc4
 
 /* That's all, stop editing! Happy publishing. */
 
