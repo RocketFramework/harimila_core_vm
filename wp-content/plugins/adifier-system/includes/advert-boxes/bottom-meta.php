@@ -1,13 +1,27 @@
 <div class="bottom-advert-meta flex-wrap">
 	<?php echo adifier_get_advert_price() ?>
-	<div class="price-bids">
+	<div class="published-time">
 		<?php 
 		$date = get_ad_publish_date();
 
 		if( ! empty( $date ) ):
 			?>
 			<i class="aficon-calendar-alt"></i>
-			<?php echo $date; ?>			
+			<?php
+				$messg = 'Just Now';
+				if ($date > 1 && $date <7) {
+					$messg = ' Few Days Ago';
+				} else if ($date >=7 && $date <30)
+				{
+					$messg = round($date / 7) .' Weeks Ago';
+				} else if ($date >=30 && $date <360)
+				{
+					$messg = round($date/30) . ' Months Ago';
+				} else 
+				{
+					$messg = 'Few Years Ago';
+				}
+				echo $messg; ?>			
 		<?php endif; ?>
 	</div>
 	<div class="flex-right">
