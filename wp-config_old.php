@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'bitnami_wordpress' );
 
 /** MySQL database username */
-define( 'DB_USER', 'harimila_root@harimilasql4' );//bn_wordpress
+define( 'DB_USER', 'bn_wordpress' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '96s633896S6338!' );//43fd0a9768
+define( 'DB_PASSWORD', '43fd0a9768' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'harimilasql4.mysql.database.azure.com:3306' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
