@@ -1,1 +1,0 @@
-<a href="javascript:void(0);" class="af-button submit-form"><?php esc_html_e( 'Search', 'adifier' ) ?></a>
